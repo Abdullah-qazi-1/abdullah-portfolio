@@ -55,7 +55,11 @@
     canvas.style.width = W + 'px';
     canvas.style.height = H + 'px';
     ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
-    R = Math.min(W, H) * 0.48;
+    // On narrow screens the word labels themselves are wide relative to the
+    // canvas, so a smaller radius keeps them from bunching up / clipping
+    // against one edge instead of sitting evenly around the centre.
+    const radiusFactor = W < 480 ? 0.36 : (W < 900 ? 0.42 : 0.48);
+    R = Math.min(W, H) * radiusFactor;
   }
 
   function rotatePoint(p, ax, ay){
@@ -88,6 +92,20 @@
   window.addEventListener('mousemove', onMove);
   window.addEventListener('mouseleave', onLeave);
   window.addEventListener('resize', resize);
+  window.addEventListener('orientationchange', resize);
+
+  // Keep the globe synced with its actual mobile container size. Some mobile
+  // browsers settle the grid/container dimensions after the first paint.
+  if (window.ResizeObserver) {
+    const ro = new ResizeObserver(() => resize());
+    ro.observe(wrap);
+  }
+
+  // Re-measure shortly after load too: on mobile the container's size can
+  // still shift slightly right after the initial paint (webfonts, browser
+  // chrome/address-bar settling), which used to leave the sphere sized for
+  // the wrong width until the user manually resized the window.
+  window.addEventListener('load', () => setTimeout(resize, 300));
 
   function frame(){
     t += reduceMotion ? 0.001 : 0.0032;
@@ -129,13 +147,21 @@
 
       const size = 7 + p.scale * 5.5;
       const alpha = 0.22 + p.scale * 0.68;
+      ctx.font = `${p.z > 0.3 ? 600 : 500} ${size}px Inter, sans-serif`;
+
+      // Clamp so the full label (not just its anchor point) stays inside
+      // the canvas — otherwise words near the sphere's edge get sliced off
+      // by the canvas boundary and the cloud looks lopsided on narrow screens.
+      const halfLabel = ctx.measureText(p.word).width / 2 + 6;
+      const clampedX = Math.max(halfLabel, Math.min(W - halfLabel, p.px + dx));
+      const clampedY = Math.max(size, Math.min(H - size, p.py + dy));
+
       ctx.save();
-      ctx.translate(p.px + dx, p.py + dy);
+      ctx.translate(clampedX, clampedY);
       if(warp > 0){
         ctx.rotate((Math.sin(t * 4 + p.seed) * 0.25) * warp);
         ctx.scale(1 + warp * 0.35, 1 - warp * 0.15);
       }
-      ctx.font = `${p.z > 0.3 ? 600 : 500} ${size}px Inter, sans-serif`;
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       ctx.fillStyle = p.color;
