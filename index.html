@@ -1,274 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abdullah — Data Scientist & ML Engineer</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Abdullah, Data Science student at Air University. Machine learning pipelines, RAG systems and autonomous AI agents.">
+    <meta name="theme-color" content="#F4F6FA">
+    <title>Abdullah | Data Scientist Portfolio</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F1A2E'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='800' font-size='28' text-anchor='middle' fill='%23ffffff'%3EAQ%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-  <div class="nav-inner">
-    <div class="brand"><span class="logo">A</span> Abdullah</div>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-    </div>
-    <a class="nav-cta" href="#contact">Contact Me</a>
-  </div>
-</nav>
-
-<header class="hero" id="about">
-  <div class="hero-grid">
-    <div class="hero-copy">
-      <div class="badge"><span class="dot"></span> Available for new opportunities</div>
-      <h1>I build ML systems<span class="muted">that fail safely, not silently.</span></h1>
-      <p class="sub">Data Science graduate from Air University, Islamabad. I work across the full stack of a model's life — from leakage-proof pipelines and drift-aware monitoring to RAG agents and the APIs that put them in front of real users.</p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">View Projects →</a>
-        <a href="resume.pdf" download="resume.pdf" class="btn btn-outline">⬇ Download CV</a>
-      </div>
-      <div class="social-row">
-        <a class="social-icon" href="https://github.com/Abdullah-qazi-1" target="_blank" aria-label="GitHub">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.5 0 12.26c0 5.42 3.44 10.02 8.21 11.64.6.11.82-.27.82-.6 0-.29-.01-1.06-.02-2.08-3.34.75-4.04-1.66-4.04-1.66-.55-1.42-1.34-1.8-1.34-1.8-1.09-.77.08-.75.08-.75 1.21.09 1.85 1.28 1.85 1.28 1.07 1.86 2.8 1.32 3.49 1.01.11-.79.42-1.32.76-1.63-2.66-.31-5.47-1.36-5.47-6.03 0-1.33.46-2.42 1.22-3.28-.12-.31-.53-1.55.12-3.23 0 0 1-.33 3.27 1.25a11.1 11.1 0 0 1 5.96 0c2.27-1.58 3.27-1.25 3.27-1.25.65 1.68.24 2.92.12 3.23.76.86 1.22 1.95 1.22 3.28 0 4.68-2.81 5.72-5.49 6.02.43.38.81 1.13.81 2.29 0 1.65-.02 2.98-.02 3.39 0 .33.22.72.83.6C20.57 22.27 24 17.68 24 12.26 24 5.5 18.63 0 12 0Z"/></svg>
-        </a>
-        <a class="social-icon" href="https://linkedin.com/in/abdul1ahdatascientist" target="_blank" aria-label="LinkedIn">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.58c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.68H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
-        </a>
-      </div>
-      <div class="scroll-hint">⌄</div>
-    </div>
-    <div class="hero-globe">
-      <canvas id="wordGlobe"></canvas>
-    </div>
-  </div>
-</header>
-
-<section id="skills">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Technical Arsenal</h2>
-      <p>The tools I use to turn problems into products.</p>
-    </div>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <div class="skill-icon icon-ai">◆</div>
-        <h3>AI & ML</h3>
-        <ul>
-          <li>Scikit-learn, XGBoost, LightGBM</li>
-          <li>Random Forest, Hyperparameter Tuning</li>
-          <li>Statistics, Model Evaluation</li>
-        </ul>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon icon-genai">✦</div>
-        <h3>GenAI & LLMs</h3>
-        <ul>
-          <li>OpenAI, Groq, Gemini APIs</li>
-          <li>LangGraph, AI Agents</li>
-          <li>RAG, ChromaDB, Embeddings</li>
-        </ul>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon icon-full">▣</div>
-        <h3>Backend & Tools</h3>
-        <div class="tag-row">
-          <span class="tag">Python</span>
-          <span class="tag">FastAPI</span>
-          <span class="tag">SQL</span>
-          <span class="tag">Git</span>
-          <span class="tag">Jupyter</span>
+    <nav class="nav" aria-label="Main">
+        <div class="wrap">
+            <a href="#top" class="brand" aria-label="Abdullah, home">
+                <span class="brand-mark">AQ</span>
+                <span>Abdullah</span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links" id="nav-links">
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#education">Education</a>
+            </div>
         </div>
-      </div>
-      <div class="skill-card wide">
-        <div class="skill-icon icon-data">▤</div>
-        <h3>Data & Databases</h3>
-        <p style="color:var(--text-dim);font-size:14px;line-height:1.7;margin:0 0 14px;">Comfortable across the full pipeline — from raw ingestion and cleaning to storing and querying at scale.</p>
-        <div class="tag-row">
-          <span class="tag">Pandas</span>
-          <span class="tag">NumPy</span>
-          <span class="tag">Matplotlib</span>
-          <span class="tag">Seaborn</span>
-          <span class="tag">Power BI</span>
-          <span class="tag">SQLite</span>
-          <span class="tag">MongoDB Atlas</span>
-          <span class="tag">ChromaDB</span>
+    </nav>
+
+    <main id="top">
+
+        <header class="hero">
+            <div class="wrap hero-grid">
+                <div class="hero-copy">
+                    <h1>Abdullah</h1>
+                    <div class="subtitle">Data Science Student | Python &amp; Machine Learning</div>
+
+                    <div class="contact-info">
+                        <span class="chip static"><i class="fas fa-map-marker-alt"></i> <span>Islamabad, Pakistan</span></span>
+                        <button type="button" class="chip" id="copy-phone-btn" title="Click to copy phone number">
+                            <i class="fas fa-phone"></i> <span id="phone-text">+92 332 5785998</span>
+                        </button>
+                        <button type="button" class="chip" id="copy-email-btn" title="Click to copy email">
+                            <i class="fas fa-envelope"></i> <span id="email-text">abdullahizaq321@gmail.com</span>
+                        </button>
+                        <a class="chip" href="https://www.linkedin.com/in/abdul1ahdatascientist/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> <span>LinkedIn</span></a>
+                        <a class="chip" href="https://github.com/Abdullah-qazi-1" target="_blank" rel="noopener"><i class="fab fa-github"></i> <span>GitHub</span></a>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="resume.pdf" download="resume.pdf" class="btn btn-primary">
+                            <i class="fas fa-arrow-down"></i> Download Resume
+                        </a>
+                        <a href="#work" class="btn btn-ghost">See my work</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="block" id="about">
+            <div class="wrap block-grid">
+                <h2>About Me</h2>
+                <p class="about-text">
+                    I am a Data Science student currently in my third year at Air University. With a strong passion for transforming raw data into intelligent, scalable systems, I specialize in building end-to-end machine learning pipelines and autonomous AI agents. My technical expertise spans across Python, vector databases like ChromaDB, and modern web frameworks like FastAPI and Streamlit. Originally from Chakwal and now based in Islamabad, I enjoy tackling complex challenges, from developing Retrieval-Augmented Generation (RAG) architectures to engineering multi-LLM routing pools. I am deeply interested in open-source development and am constantly exploring new ways to push the boundaries of AI integration in real-world applications.
+                </p>
+            </div>
+        </section>
+
+        <section class="block" id="work">
+            <div class="wrap">
+                <div class="work-head"><h2>Featured Work</h2></div>
+
+                <!-- 1. SMARTRECO (THE WINNER HIGHLIGHT) -->
+                <article class="project-winner">
+                    <div class="winner-badge">
+                        <i class="fas fa-trophy"></i> 8th Place Worldwide, SmartReco Build Challenge 2026
+                    </div>
+                    <h3>SmartReco: Behavioral Recommendation Platform</h3>
+
+                    <div class="project-links">
+                        <a href="https://github.com/Abdullah-qazi-1/smartreco-behavioral-ai-agent.git" target="_blank" rel="noopener" class="code-link">
+                            View Code <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="project-details">
+                        <ul>
+                            <li>Built a recommendation platform that tracks learner behavior and scores interest using recency decay (7-day half-life), dwell-time weighting, and frequency boosts.</li>
+                            <li>Implemented retrieval with RAG over a ChromaDB vector index, and a grounding check that validates LLM output against the real course catalog to reduce hallucinated results.</li>
+                            <li>Kept the SQL store and the vector index consistent using dual-write and self-healing sync.</li>
+                            <li>Added response caching, rate limiting, LLM-outage fallbacks, smoke tests, and a recommendation-quality eval script; fixed privilege-escalation vulnerabilities.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">ChromaDB</span>
+                        <span class="tech-tag">RAG</span>
+                        <span class="tech-tag">LangGraph</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">APScheduler</span>
+                    </div>
+                </article>
+
+                <!-- 2. AGENTCARE (DEPLOYED ON RENDER) -->
+                <article class="project-row">
+                    <div class="project-sidebar">
+                        <h3>AgentCare: Multi-Agent Patient System</h3>
+                        <div class="deploy-tag"><i class="fas fa-server"></i> Deployed on Render</div>
+                        <div class="project-links">
+                            <a href="https://github.com/Abdullah-qazi-1/agentcare-ai-patient-coordination.git" target="_blank" rel="noopener" class="code-link">
+                                View Code <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://gentcare-ai-patient-coordination.onrender.com/login" target="_blank" rel="noopener" class="code-link">
+                                Live Demo <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">SQLAlchemy</span>
+                            <span class="tech-tag">LangGraph</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <ul>
+                            <li>Built six LangGraph agents with 23 tools that handle routing, appointment booking, document filing, and reminders from free-text requests.</li>
+                            <li>Prevented double-booking with atomic database slot-claiming; kept an audit trail and human approvals that survive restarts.</li>
+                            <li>Added a multi-layer safety pipeline (input, output, and tool-argument checks) so the system avoids giving medical advice.</li>
+                            <li>Wrote 298 automated tests, routing-accuracy evals, and a CI pipeline; packaged with Docker and deployed a live demo.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- 3. PHISHING DATA -->
+                <article class="project-row">
+                    <div class="project-sidebar">
+                        <h3>Phishing Website Detection Pipeline</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/Abdullah-qazi-1/End-to-End-Mloops-Project-.git" target="_blank" rel="noopener" class="code-link">
+                                View Code <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">MongoDB Atlas</span>
+                            <span class="tech-tag">MLflow</span>
+                            <span class="tech-tag">DagsHub</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">AWS (EC2/S3)</span>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <ul>
+                            <li>Built an End-to-End MLOps pipeline that ingests data from MongoDB Atlas, validates and transforms it, and trains classifiers with automated hyperparameter tuning.</li>
+                            <li>Tracked experiments and metrics in MLflow and DagsHub for reproducible comparison of models.</li>
+                            <li>Served the trained model through a FastAPI service for batch prediction.</li>
+                            <li>Automated deployment with Docker and GitHub Actions: images pushed to AWS ECR and run on EC2, with S3 for artifact storage.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- 4. QAZTERION -->
+                <article class="project-row">
+                    <div class="project-sidebar">
+                        <h3>Qazterion: Autonomous AI Coding Agent</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/Abdullah-qazi-1/qazterion-agent.git" target="_blank" rel="noopener" class="code-link">
+                                View Code <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Multi-LLM Routing</span>
+                            <span class="tech-tag">DPAPI Encrypted Secrets</span>
+                            <span class="tech-tag">CI/CD Pipeline</span>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <ul>
+                            <li>Engineered a provider-agnostic, autonomous terminal agent that plans tasks, edits codebases, runs tests, self-repairs failures, and commits verified changes automatically.</li>
+                            <li>Designed an intelligent multi-key routing system with a live connection pool evaluating success rates and latency for automatic failover.</li>
+                            <li>Secured user API keys at rest using Windows DPAPI and Unix Fernet encryption, completely preventing plain-text storage.</li>
+                            <li>Executed a robust CI matrix with over 260 automated tests across Windows and Ubuntu environments.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="block" id="certifications">
+            <div class="wrap block-grid">
+                <h2>Certifications</h2>
+                <div class="cert-list">
+
+                    <div class="cert-item">
+                        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                        <div>
+                            <div class="cert-title">Complete Data Science, Machine Learning, DL, NLP Bootcamp</div>
+                            <div class="cert-meta">Udemy (Krish Naik) &bull; Jul 2026 &bull; ID: UC-3011e7b8...</div>
+                            <div class="cert-desc">101.5-hour comprehensive bootcamp covering core ML algorithms, model building, and NLP techniques including text classification.</div>
+                        </div>
+                    </div>
+
+                    <div class="cert-item">
+                        <div class="cert-icon"><i class="fas fa-award"></i></div>
+                        <div>
+                            <div class="cert-title">Supervised Machine Learning: Regression and Classification</div>
+                            <div class="cert-meta">Coursera &bull; Jun 2026</div>
+                            <div class="cert-desc">Fundamentals including regression models, cost functions, gradient descent optimization, and practical Python implementation.</div>
+                        </div>
+                    </div>
+
+                    <div class="cert-item">
+                        <div class="cert-icon"><i class="fas fa-code"></i></div>
+                        <div>
+                            <div class="cert-title">Complete Python with DSA Bootcamp + LeetCode Exercises</div>
+                            <div class="cert-meta">Udemy</div>
+                            <div class="cert-desc">Hands-on coding focus with extensive Data Structures &amp; Algorithms coverage.</div>
+                        </div>
+                    </div>
+
+                    <div class="cert-item">
+                        <div class="cert-icon"><i class="fas fa-hands-helping"></i></div>
+                        <div>
+                            <div class="cert-title">DataFest 2025 Volunteer</div>
+                            <div class="cert-meta">Pakistan Bureau of Statistics</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="block" id="education">
+            <div class="wrap block-grid">
+                <h2>Education</h2>
+                <div class="edu-banner">
+                    <div>
+                        <h3>Air University, Islamabad</h3>
+                        <p>BS Data Science</p>
+                    </div>
+                    <div class="year-tag">Third Year Student</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <div class="copyright">&copy; 2026 Abdullah. All rights reserved.</div>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/abdul1ahdatascientist/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Abdullah-qazi-1" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
         </div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon icon-deploy">⛁</div>
-        <h3>MLOps & Cloud</h3>
-        <ul>
-          <li>Docker, GitHub Actions CI/CD</li>
-          <li>AWS (S3 / ECR / EC2)</li>
-          <li>MLflow, DagsHub</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+    </footer>
 
-<section id="experience">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Experience</h2>
-      <p>Education, training, and where the record speaks for itself.</p>
-    </div>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-top">
-          <h3>8th Place Worldwide — SmartReco Build Challenge 2026</h3>
-          <span class="date">2026</span>
-        </div>
-        <div class="org">Krish Naik Academy · Global Hackathon</div>
-        <p class="desc">Ranked 8th globally out of international competitors for building SmartReco, a behavioral recommendation agent that tracks real engagement signals instead of simple clicks.</p>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-top">
-          <h3>Bachelor of Science in Data Science</h3>
-          <span class="date">Present</span>
-        </div>
-        <div class="org">Air University, Islamabad</div>
-        <p class="desc">Core coursework spanning statistics, machine learning, and applied data engineering — the vocabulary that production later stress-tested.</p>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-top">
-          <h3>Complete Data Science, ML, Deep Learning & NLP Bootcamp</h3>
-          <span class="date">Certification</span>
-        </div>
-        <div class="org">Applied Coursework</div>
-        <p class="desc">End-to-end applied training across classical ML, deep learning architectures, and NLP fundamentals.</p>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-top">
-          <h3>Complete Python with DSA Bootcamp</h3>
-          <span class="date">Certification</span>
-        </div>
-        <div class="org">LeetCode Exercises</div>
-        <p class="desc">Python fundamentals and data structures & algorithms, practiced through applied LeetCode problem-solving.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="projects">
-  <div class="wrap">
-    <div class="proj-head-row">
-      <div class="section-head" style="margin-bottom:0;">
-        <h2>Featured Projects</h2>
-        <p>Selected work blending agents, ML pipelines, and production systems.</p>
-      </div>
-      <div class="filters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="agents">AI / Agents</button>
-        <button class="filter-btn" data-filter="mlops">MLOps</button>
-        <button class="filter-btn" data-filter="full">Full-Stack</button>
-      </div>
-    </div>
-
-    <div class="projects-grid">
-      <div class="project-card show" data-cat="agents">
-        <div class="project-banner banner-agents">⌘<a class="ext" href="https://github.com/Abdullah-qazi-1/qazterion-agent" target="_blank" aria-label="View Qazterion repo">↗</a></div>
-        <div class="project-body">
-          <div class="project-cat">CLI Coding Agent</div>
-          <h3>Qazterion</h3>
-          <p class="pdesc">A terminal-based coding agent that plans, writes, tests, and repairs its own code with checkpoints, so a bad edit is never permanent.</p>
-          <div class="tag-row">
-            <span class="tag">Python</span>
-            <span class="tag">LiteLLM</span>
-            <span class="tag">SQLite</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card show" data-cat="agents">
-        <div class="project-banner banner-agents">◈<a class="ext" href="https://github.com/Abdullah-qazi-1/smartreco-behavioral-ai-agent" target="_blank" aria-label="View SmartReco repo">↗</a></div>
-        <div class="project-body">
-          <div class="project-cat">Behavioral Recommender</div>
-          <h3>SmartReco</h3>
-          <p class="pdesc">A recommendation agent for e-learning that scores interest from dwell time, scroll depth, and clicks instead of clicks alone.</p>
-          <div class="tag-row">
-            <span class="tag">LangGraph</span>
-            <span class="tag">ChromaDB</span>
-            <span class="tag">FastAPI</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card show" data-cat="full">
-        <div class="project-banner banner-full">▧<a class="ext" href="https://github.com/Abdullah-qazi-1/eurus-ai-copilot" target="_blank" aria-label="View Eurus repo">↗</a></div>
-        <div class="project-body">
-          <div class="project-cat">Enterprise Copilot</div>
-          <h3>Eurus — AI Employee Copilot</h3>
-          <p class="pdesc">Ingests company data to draft proposals, emails, and meeting summaries with RAG-grounded, verifiable citations.</p>
-          <div class="tag-row">
-            <span class="tag">Next.js</span>
-            <span class="tag">FastAPI</span>
-            <span class="tag">Docker</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card show" data-cat="mlops">
-        <div class="project-banner banner-mlops">📈<a class="ext" href="https://github.com/Abdullah-qazi-1/pakistan-food-price-intelligence" target="_blank" aria-label="View Food Price Intelligence repo">↗</a></div>
-        <div class="project-body">
-          <div class="project-cat">MLOps · Forecasting</div>
-          <h3>Pakistan Food Price Intelligence</h3>
-          <p class="pdesc">Predicts prices for five food commodities from macroeconomic and weather data. Test R² of 0.9739 after fixing a leakage bug.</p>
-          <div class="tag-row">
-            <span class="tag">XGBoost</span>
-            <span class="tag">LightGBM</span>
-            <span class="tag">FastAPI</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card show" data-cat="mlops">
-        <div class="project-banner banner-mlops">🛡<a class="ext" href="https://github.com/Abdullah-qazi-1/End-to-End-Mloops-Project-" target="_blank" aria-label="View Phishing Detection repo">↗</a></div>
-        <div class="project-body">
-          <div class="project-cat">MLOps · Security</div>
-          <h3>Phishing Website Detection</h3>
-          <p class="pdesc">A production pipeline detecting phishing sites with automated AWS deployment on every code push via GitHub Actions.</p>
-          <div class="tag-row">
-            <span class="tag">MongoDB Atlas</span>
-            <span class="tag">MLflow</span>
-            <span class="tag">AWS</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="contact-section" id="contact">
-  <div class="wrap">
-    <h2>Ready to build something intelligent?</h2>
-    <p>I'm currently looking for opportunities in Machine Learning and Full-Stack development. Whether you have a question or just want to say hi, I'll try my best to get back to you.</p>
-    <div class="contact-actions">
-      <a class="btn btn-primary" href="mailto:abdullahizaq321@gmail.com">✉ Send Email</a>
-      <a class="btn btn-outline" href="https://github.com/Abdullah-qazi-1" target="_blank">⌘ View GitHub</a>
-    </div>
-    <div class="email-line">abdullahizaq321@gmail.com</div>
-    <div class="social-row">
-      <a class="social-icon" href="https://github.com/Abdullah-qazi-1" target="_blank" aria-label="GitHub">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.5 0 12.26c0 5.42 3.44 10.02 8.21 11.64.6.11.82-.27.82-.6 0-.29-.01-1.06-.02-2.08-3.34.75-4.04-1.66-4.04-1.66-.55-1.42-1.34-1.8-1.34-1.8-1.09-.77.08-.75.08-.75 1.21.09 1.85 1.28 1.85 1.28 1.07 1.86 2.8 1.32 3.49 1.01.11-.79.42-1.32.76-1.63-2.66-.31-5.47-1.36-5.47-6.03 0-1.33.46-2.42 1.22-3.28-.12-.31-.53-1.55.12-3.23 0 0 1-.33 3.27 1.25a11.1 11.1 0 0 1 5.96 0c2.27-1.58 3.27-1.25 3.27-1.25.65 1.68.24 2.92.12 3.23.76.86 1.22 1.95 1.22 3.28 0 4.68-2.81 5.72-5.49 6.02.43.38.81 1.13.81 2.29 0 1.65-.02 2.98-.02 3.39 0 .33.22.72.83.6C20.57 22.27 24 17.68 24 12.26 24 5.5 18.63 0 12 0Z"/></svg>
-      </a>
-      <a class="social-icon" href="https://linkedin.com/in/abdul1ahdatascientist" target="_blank" aria-label="LinkedIn">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.58c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.68H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
-      </a>
-      <a class="social-icon" href="mailto:abdullahizaq321@gmail.com" aria-label="Email">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" stroke="none"/><path d="M3 6l9 7 9-7"/><path d="M3 6h18v12H3z"/></svg>
-      </a>
-    </div>
-  </div>
-</section>
-
-<footer>© 2026 Abdullah. Built with Python-grade rigor.</footer>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
